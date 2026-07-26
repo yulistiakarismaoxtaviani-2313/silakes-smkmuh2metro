@@ -12,7 +12,7 @@ Sistem ini dikembangkan untuk membantu pengelolaan layanan kesiswaan di SMK Muha
 
 - Laravel 12
 - PHP 8.2
-- MySQL / MariaDB
+- MariaDB
 - Tailwind CSS
 - Vite
 
