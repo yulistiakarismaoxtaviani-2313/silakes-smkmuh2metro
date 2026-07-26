@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    /* 1. Daftarkan Font Poppins */
+    --font-poppins: 'Poppins', sans-serif;
+    
+    /* Jadikan Poppins sebagai font utama (sans) agar otomatis berubah semua */
+    --font-sans: 'Poppins', ui-sans-serif, system-ui;
+
+    /* 2. Warna Biru SMK dari Mockup kamu */
+    --color-smk-blue: #004AAD;
+}
+
+/* 3. Utility khusus agar Kotak & Tabel punya border biru tegas seperti Mockup */
+@utility card-smk {
+    @apply border-2 border-[--color-smk-blue] rounded-xl bg-white shadow-sm;
+}

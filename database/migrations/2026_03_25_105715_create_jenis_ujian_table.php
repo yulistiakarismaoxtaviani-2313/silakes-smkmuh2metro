@@ -1,0 +1,22 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateJenisUjianTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('jenis_ujian', function (Blueprint $table) {
+            $table->id('id_jenis_ujian');
+            $table->string('nama_ujian');
+            $table->timestamps();
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists('jenis_ujian');
+    }
+}
